@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-areas: "uno uno uno dos dos dos"
+                        "cinco cinco cinco dos dos dos"
+                        "siete siete siete ocho nueve nueve"
+                        "once once once once once once ";
+   height: 100vh;
+}
+.cajas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white;
+}
+.uno{
+    grid-area: uno;
+    background-color: crimson;
+}
+.dos{
+    background-color: deeppink;
+    grid-area: dos;
+}
+
+.cinco{
+    background-color: darkolivegreen;
+    grid-area: cinco;
+}
+
+.siete{
+    background-color: darkgoldenrod;
+    grid-area: siete;
+}
+
+.ocho{
+    background-color: coral;
+    grid-area: ocho;
+}
+
+.nueve{
+    background-color: aqua;
+    grid-area: nueve;
+}
+
+.once{
+    grid-area: once;
+    background-color: purple;
+}

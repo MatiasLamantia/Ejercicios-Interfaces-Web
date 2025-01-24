@@ -1,0 +1,68 @@
+.body{
+    display: grid;
+    grid-template-areas: "header" "hero" "menu" "main" "banner" "extra" "image";
+    height: 100vh;
+}
+@media (min-width: 800px){
+    .body{
+        grid-template-areas: "header header header header"
+                            "hero hero hero hero"
+                            "hero hero hero hero"
+                            "menu main main main"
+                            "menu main main main"
+                            "menu banner banner banner"
+                            "menu extra extra image";
+    }
+}
+
+
+@media (min-width: 1200px){
+    .body {
+       grid-template-areas: "header menu menu menu"
+                            "hero hero hero hero"
+                            "hero hero hero hero"
+                            "hero hero hero hero"
+                            "main main . image"
+                            "main main . extra"
+                            "banner banner banner banner";
+    
+    }
+}
+
+.cajas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    grid-area: header;
+    background-color: #30475e;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: blueviolet;
+}
+.hero{
+    grid-area: hero;
+    background-color: crimson;
+}
+
+.main{
+    grid-area: main;
+    background-color: darkmagenta;
+}
+.banner{
+    grid-area: banner;
+    background-color: darkkhaki;
+}
+
+.extra{
+    grid-area: extra;
+    background-color: darkcyan;
+}
+
+.image{
+    grid-area: image;
+    background-color: aqua;
+}

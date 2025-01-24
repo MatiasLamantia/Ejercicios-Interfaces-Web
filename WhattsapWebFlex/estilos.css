@@ -1,0 +1,14 @@
+.articulo{
+	background-color: lightblue;
+	border-color: white;
+	border-radius: 12px;
+
+}
+
+.main{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;	
+	height: 1000px;
+
+}

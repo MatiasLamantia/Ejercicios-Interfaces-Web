@@ -1,0 +1,100 @@
+/* Maquetación del layout mediante grid template areas ademas de indicar el gap y el alto de la página */
+body{
+    display: grid;
+    grid-template-areas: "header""article""footer";
+    background-color: #ff7f50;
+    height: 100vh;
+    grid-gap : 0.2em;
+}
+
+
+/* Todos los elementos del layout van a tener el color especificado y el texto estara alineado al centro */
+.cajas{
+    background-color: #d75c2f;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3em;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+
+/* Indicación del area que ocupa en el template */
+.header{
+    grid-area: header;
+
+}
+
+
+/* Indicación del area que ocupa en el template */
+.nav{
+    display: none;
+}
+
+
+/*Indicamos la altra y organizo los elementos de la lista mediante flex y justifico el contenido para que ocupe exista el mismo espacio entre todos los elementos */
+.navigation{
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* Quita el subrayado a los enlaces de la lista */
+.navigation a{
+    text-decoration:none;
+    color: black;
+}
+
+
+/* Indicación del area que ocupa en el template ademas de indicar que organize las secciones en dos columnas*/
+.article{
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+
+/* Solo la primera seccion va a ocupar las 2 columnas de anchp */
+.section1{
+    grid-column: 1 / 3;
+}
+
+
+/*Cuando la pantalla sea mayor a los pixeles indicados se muestra el nav y cambia el article a 4 columnas y la seccion1 ocupa cuatro columnas */
+@media(min-width : 700px){
+    body{
+        grid-template-areas: "header header header header"
+                        "nav article article article"
+                        "footer footer footer footer";
+    }
+    .nav{
+        display: block;
+        grid-area:nav;
+        display: flex;
+    }
+
+    .article{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    .section1{
+        grid-column: 1 / 5;
+    }
+}
+
+/*Se indica que occupe todo el alto y el color de fondo ademas de los bordes redondeados */
+.sectionArticle{
+    height: 100%;
+    background-color: rgb(117, 59, 38);
+    border-radius: 0.5em;
+}
+
+/* Indicación del area que ocupa en el template */
+.footer{
+    grid-area:footer;
+}

@@ -1,0 +1,29 @@
+form{
+	background-color: #176B87 ;
+}
+
+.inputylabel{
+	text-align: center;
+	border: solid 3px #DAFFFB;
+	border-radius: 10px;
+	background-color: #64CCC5 ;
+	padding: 10px;
+	margin: 25%;
+	margin-bottom: 2px;
+	margin-top:2px;
+}
+
+.labelform{
+float: left;
+}
+
+.tituloform{
+	margin-left: 25%;
+}
+
+.botonbuy{
+	text-align: center;
+	padding: 10px;
+	margin: 15%;
+	margin-top:2px;
+}

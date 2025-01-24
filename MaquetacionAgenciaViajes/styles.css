@@ -1,0 +1,175 @@
+body{
+    width: 99%;
+    color: DEDFE3;
+}
+
+/*************************************  Header *************************************/
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+    height: 30%;
+    width: 30%;
+}
+.listaHeader{
+    display: flex;
+    list-style-type: none;
+}
+
+.listaHeader li{
+    margin-left : 1em;
+}
+
+
+/**************************************   Nav Viajes   **************************************/
+.navViajes{
+    display: flex;
+    align-items: center;
+    background-color: #279989;
+    height: 4em;
+}
+.navViajes ul{
+    display: none;
+}
+
+
+
+/* Nav Posicion */
+.posicion{
+    display: flex;
+    list-style-type: none;
+}
+
+.posicion li {
+    margin-right: 2em;
+}
+
+
+/*************************************  Descripcion  *************************************/
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background: url(img/fondoDesc.jpg);
+    background-size: cover;
+
+}
+
+.planearViaje{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 80%;
+}
+
+.planearViaje input{
+    margin: 1.5em 10%  1em 10%;
+}
+.enviarPlanearViaje{
+    background-color: #279989;
+    border-radius: 0.25em;
+    border: none;
+    color: white;
+}
+
+
+/*************************************    Main    *************************************/
+.main{
+    display: grid;
+    grid-template-areas: 
+    "viajes";
+}
+.filtros{
+    display: flex;
+    width: 15em;
+    border: solid 0.1em #DEDFE3;
+    grid-area: filtros;
+    margin-right: 1.3em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: none;
+}
+@media(min-width: 1030px) {
+    .navViajes{
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    .main {
+        grid-template-areas: 
+        "filtros viajes viajes viajes";
+    }
+
+    .filtros{
+        display: block;
+    }
+  }
+
+
+
+
+.formFiltros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.viajes{
+    grid-area: viajes;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+
+}
+.viaje{
+    margin-bottom: 2em;
+}
+
+@media(min-width: 478px) {
+    .viajes{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 771px) {
+    .viajes{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .planearViaje{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+
+
+.mapa{
+    height: 60%;
+    width: 100%;
+}
+.descripcion{
+    margin-bottom: 1em;
+}
+.info{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconoMapa{
+    height: 1.5em;
+    width: 1.5em;
+}
+.botonPrecio{
+    background-color: #FF7F41;
+    border: none;
+    height: 3em;
+    width: 40%;
+}

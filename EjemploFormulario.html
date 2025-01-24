@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="datos.php" method="POST">
+		<h1>Ejemplo de formulario</h1>
+		<fieldset>
+
+			<legend>Registro de usuario</legend>
+
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre"><br>
+
+			<label for="apellido">Apellido</label>
+			<input type="text" name="apellido"><br>
+
+			<label for="nacimiento">Fecha de nacimiento</label>
+			<input type="date" name="nacimiento" ><br>
+
+			<label for="email">Correo electronico</label>
+			<input  name="email" pattern="[1-9]*"><br>
+
+			<label for="usuario">Usuario</label>
+			<input type="text" name="usuario"><br>
+
+			<label for="helado" >Sabor de helado favorito</label>
+			<input name="helado" type="text" list="items">
+			<datalist id="items">
+			  <option value="Chocolate"></option>
+			  <option value="Vanilla"></option>
+			</datalist><br>
+
+			<label for="contrasenia">Contraseña</label>
+			<input type="password" name="contrasnia"><br>
+
+			<input type="submit" value="Enviar">
+		</fieldset>
+	</form>
+</body>
+</html>

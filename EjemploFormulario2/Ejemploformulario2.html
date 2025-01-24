@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Ejercicio Formulario 2</title>
+</head>
+<body>
+	<form>
+			<h2 class="tituloform">Step 1: Your details</h2>
+			<div class="inputylabel">
+				<label for="name" class="labelform">Name</label>
+				<input type="text" name="name" placeholder="First and last name">
+			</div>
+
+			<div class="inputylabel">
+				<label for="email" class="labelform">2. Email</label>
+				<input type="email" name="email" placeholder="example@domain.com">
+			</div>
+
+			<div class="inputylabel">
+				<label for="phone" class="labelform">3. Phone</label>
+				<input type="tel" name="phone" placeholder="Eg. +44750000000">
+			</div>
+
+			<h2 class="tituloform">Step 2: Delivery address</h2>
+			<div class="inputylabel">
+				<label for="address" class="labelform">1. Address</label>
+				<textarea cols="20" rows="5"></textarea>
+			</div>
+
+			<div class="inputylabel">
+				<label for="postcode" class="labelform">2. Post code</label>
+				<input type="text" name="postcode">
+			</div>
+
+			<div class="inputylabel">
+				<label for="country" class="labelform">3. Country</label>
+				<input type="text" name="country">
+			</div>
+		
+
+			<h2 class="tituloform">Step 3: Card details</h2>
+			<div class="inputylabel">
+				<legend class="labelform" class="tituloform">Card type</legend>
+				<input type="radio" name="cardtype" id="visa" value="Visa">
+				<label for="visa">Visa</label>
+
+				<input type="radio" name="cardtype" id="amex" value="AmEx">
+				<label for="amex">AmEx</label>
+
+				<input type="radio" name="cardtype" id="mastercard" value="Mastercard">
+				<label for="mastercard">Mastercard</label>
+			</div>
+
+			<div class="inputylabel">
+			<label for="cardnumber" class="labelform">2. Card number</label>
+			<input type="number" name="cardnumber">
+			</div>
+
+			<div class="inputylabel">
+			<label for="securitycode" class="labelform">3. Security code</label>
+			<input type="text" name="securitycode">
+			</div>
+
+			<div class="inputylabel">
+			<label for="nameoncard" class="labelform">4. Name on card</label>
+			<input type="text" name="nameoncard" placeholder="Exact name as on the card">
+			</div>
+			<div class="botonbuy">
+			<input type="submit" value="Buy it!" >
+			</div>
+	</form>
+</body>
+</html>
